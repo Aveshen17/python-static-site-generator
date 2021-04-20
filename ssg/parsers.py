@@ -15,7 +15,7 @@ def read(self, path):
     with open(path, "r",) as file:
         return file.read()
 
-def write(self, path: Path, dest: Path, content: Path)
+def write(self, path: Path, dest: Path, content: Path):
     full_path=dest / path.with_suffix(ext).name
     with open(full_path, "w") as file:
         file.write(content)
